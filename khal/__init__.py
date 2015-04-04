@@ -20,10 +20,10 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-from khal import version
+import pkginfo
 
 __productname__ = 'khal'
-__version__ = version.__version__
+__version__ = pkginfo.get_metadata(__productname__).version
 __author__ = 'Christian Geier'
 __copyright__ = 'Copyright (c) 2013-2015 Christian Geier et al.'
 __author_email__ = 'khal@lostpackets.de'
